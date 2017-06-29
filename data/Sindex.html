@@ -1,0 +1,1439 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Language" content="fa">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CNC</title>
+<meta name="generator" content="xxx">
+<style type="text/css">
+div#container
+{
+   width: 800px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   text-align: left;
+}
+body
+{
+   background-color: #D4D0C8;
+
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   text-align: center;
+}
+a
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+a:visited
+{
+   color: #800080;
+}
+a:active
+{
+   color: #FF0000;
+}
+a:hover
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+#top_layer
+{
+   background-color: #003986;
+   -moz-box-shadow: 11px 0px 12px #000000;
+   -webkit-box-shadow: 11px 0px 12px #000000;
+   box-shadow: 11px 0px 12px #000000;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text1 div
+{
+   text-align: left;
+   white-space: nowrap;
+}
+#wb_Text1vy50 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text1vy50 div
+{
+   text-align: center;
+}
+#current_data
+{
+   border: 0px #DCDCDC solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#_link
+{
+   border: 0px #A9A9A9 solid;
+   -moz-border-radius: 13px;
+   -webkit-border-radius: 13px;
+   border-radius: 13px;
+   background-color: #DCDCDC;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#wb_Tex6yt5t3 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Tex6yt5t3 div
+{
+   text-align: left;
+}
+#layer_log
+{
+   background-color: transparent;
+}
+#Layer1
+{
+   background-color: transparent;
+}
+#wb_Tfgkext2 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Tfgkext2 div
+{
+   text-align: left;
+}
+#wb_CssMenu4
+{
+   border: 0px #0000CD solid;
+   background-color: transparent;
+}
+#wb_CssMenu4 ul
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+#wb_CssMenu4 li
+{
+   float: left;
+   margin: 0;
+   padding: 0px 1px 0px 0px;
+   width: 100px;
+}
+#wb_CssMenu4 a
+{
+   display: block;
+   float: left;
+   color: #FFFFFF;
+   border: 0px #D0F0EF solid;
+   background-color: #48494A;
+   background: -moz-linear-gradient(top,#48494A 0%,#A0A1A3 3%,#757A7C 7%,#33373D 50%,#02070B 50%,#000104 100%);
+   background: -webkit-linear-gradient(top,#48494A 0%,#A0A1A3 3%,#757A7C 7%,#33373D 50%,#02070B 50%,#000104 100%);
+   background: -o-linear-gradient(top,#48494A 0%,#A0A1A3 3%,#757A7C 7%,#33373D 50%,#02070B 50%,#000104 100%);
+   background: -ms-linear-gradient(top,#48494A 0%,#A0A1A3 3%,#757A7C 7%,#33373D 50%,#02070B 50%,#000104 100%);
+   background: linear-gradient(top,#48494A 0%,#A0A1A3 3%,#757A7C 7%,#33373D 50%,#02070B 50%,#000104 100%);
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 15px;
+   font-style: normal;
+   text-decoration: none;
+   width: 90px;
+   height: 30px;
+   padding: 0px 5px 0px 5px;
+   vertical-align: middle;
+   line-height: 30px;
+   text-align: center;
+}
+#wb_CssMenu4 li:hover a, #wb_CssMenu4 a:hover
+{
+   color: #FFFFFF;
+   background-color: #002840;
+   background: -moz-linear-gradient(top,#002840 0%,#002840 18%,#4ECAFD 50%,#002840 81%,#002840 100%);
+   background: -webkit-linear-gradient(top,#002840 0%,#002840 18%,#4ECAFD 50%,#002840 81%,#002840 100%);
+   background: -o-linear-gradient(top,#002840 0%,#002840 18%,#4ECAFD 50%,#002840 81%,#002840 100%);
+   background: -ms-linear-gradient(top,#002840 0%,#002840 18%,#4ECAFD 50%,#002840 81%,#002840 100%);
+   background: linear-gradient(top,#002840 0%,#002840 18%,#4ECAFD 50%,#002840 81%,#002840 100%);
+   border: 0px #145F74 solid;
+}
+#wb_CssMenu4 li.firstmain
+{
+   padding-left: 0px;
+}
+#wb_CssMenu4 li.lastmain
+{
+   padding-right: 0px;
+}
+#wb_CssMenu4 br
+{
+   clear: both;
+   font-size: 1px;
+   height: 0;
+   line-height: 0;
+}
+#Layerjog
+{
+   background-color: transparent;
+   border: 2px #000000 solid;
+}
+#wb_upjag a svg
+{
+   position: absolute;
+}
+#wb_upjag span
+{
+   position: absolute;
+}
+#wb_upjag a .hover
+{
+   visibility: hidden;
+}
+#wb_upjag a:hover .hover
+{
+   visibility: visible;
+}
+#wb_upjag a:hover span
+{
+   visibility: hidden;
+}
+#wb_downjag a svg
+{
+   position: absolute;
+}
+#wb_downjag span
+{
+   position: absolute;
+}
+#wb_downjag a .hover
+{
+   visibility: hidden;
+}
+#wb_downjag a:hover .hover
+{
+   visibility: visible;
+}
+#wb_downjag a:hover span
+{
+   visibility: hidden;
+}
+#setdotum
+{
+   border: 0px #A9A9A9 solid;
+   -moz-border-radius: 53px;
+   -webkit-border-radius: 53px;
+   border-radius: 53px;
+   background-color: #F0F0F0;
+   background: -moz-radial-gradient(circle,#000000 0%,#1016A6 54%,#1016A6 81%,#57FFC0 100%);
+   background: -webkit-radial-gradient(circle,#000000 0%,#1016A6 54%,#1016A6 81%,#57FFC0 100%);
+   background: -o-radial-gradient(circle,#000000 0%,#1016A6 54%,#1016A6 81%,#57FFC0 100%);
+   background: -ms-radial-gradient(circle,#000000 0%,#1016A6 54%,#1016A6 81%,#57FFC0 100%);
+   background: radial-gradient(circle,#000000 0%,#1016A6 54%,#1016A6 81%,#57FFC0 100%);
+   color: #00FF00;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   -moz-box-shadow: 1px 1px 10px #4169E1;
+   -webkit-box-shadow: 1px 1px 10px #4169E1;
+   box-shadow: 1px 1px 10px #4169E1;
+}
+#setdotum:hover
+{
+   -webkit-transform: rotate(0deg) scale(1.02,1.02);
+   -moz-transform: rotate(0deg) scale(1.02,1.02);
+   -ms-transform: rotate(0deg) scale(1.02,1.02);
+   transform: rotate(0deg) scale(1.02,1.02);
+   -webkit-transition: -webkit-transform 100ms linear 0ms;
+   -moz-transition: transform 100ms linear 0ms;
+   -ms-transition: transform 100ms linear 0ms;
+   transition: transform 100ms linear 0ms;
+}
+#wb_leftjog a svg
+{
+   position: absolute;
+}
+#wb_leftjog span
+{
+   position: absolute;
+}
+#wb_leftjog a .hover
+{
+   visibility: hidden;
+}
+#wb_leftjog a:hover .hover
+{
+   visibility: visible;
+}
+#wb_leftjog a:hover span
+{
+   visibility: hidden;
+}
+#wb_rightjag a svg
+{
+   position: absolute;
+}
+#wb_rightjag span
+{
+   position: absolute;
+}
+#wb_rightjag a .hover
+{
+   visibility: hidden;
+}
+#wb_rightjag a:hover .hover
+{
+   visibility: visible;
+}
+#wb_rightjag a:hover span
+{
+   visibility: hidden;
+}
+#homex
+{
+   border: 0px #A9A9A9 solid;
+   -moz-border-radius: 28px;
+   -webkit-border-radius: 28px;
+   border-radius: 28px;
+   background-color: #F0F0F0;
+   background: -moz-radial-gradient(circle,#000000 0%,#1016A6 54%,#1016A6 81%,#57FFC0 100%);
+   background: -webkit-radial-gradient(circle,#000000 0%,#1016A6 54%,#1016A6 81%,#57FFC0 100%);
+   background: -o-radial-gradient(circle,#000000 0%,#1016A6 54%,#1016A6 81%,#57FFC0 100%);
+   background: -ms-radial-gradient(circle,#000000 0%,#1016A6 54%,#1016A6 81%,#57FFC0 100%);
+   background: radial-gradient(circle,#000000 0%,#1016A6 54%,#1016A6 81%,#57FFC0 100%);
+   color: #00FF00;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+   -moz-box-shadow: 1px 1px 10px #4169E1;
+   -webkit-box-shadow: 1px 1px 10px #4169E1;
+   box-shadow: 1px 1px 10px #4169E1;
+}
+#homex:hover
+{
+   -webkit-transform: rotate(0deg) scale(1.02,1.02);
+   -moz-transform: rotate(0deg) scale(1.02,1.02);
+   -ms-transform: rotate(0deg) scale(1.02,1.02);
+   transform: rotate(0deg) scale(1.02,1.02);
+   -webkit-transition: -webkit-transform 100ms linear 0ms;
+   -moz-transition: transform 100ms linear 0ms;
+   -ms-transition: transform 100ms linear 0ms;
+   transition: transform 100ms linear 0ms;
+}
+#homey
+{
+   border: 0px #A9A9A9 solid;
+   -moz-border-radius: 28px;
+   -webkit-border-radius: 28px;
+   border-radius: 28px;
+   background-color: #F0F0F0;
+   background: -moz-radial-gradient(circle,#000000 0%,#1016A6 54%,#1016A6 81%,#57FFC0 100%);
+   background: -webkit-radial-gradient(circle,#000000 0%,#1016A6 54%,#1016A6 81%,#57FFC0 100%);
+   background: -o-radial-gradient(circle,#000000 0%,#1016A6 54%,#1016A6 81%,#57FFC0 100%);
+   background: -ms-radial-gradient(circle,#000000 0%,#1016A6 54%,#1016A6 81%,#57FFC0 100%);
+   background: radial-gradient(circle,#000000 0%,#1016A6 54%,#1016A6 81%,#57FFC0 100%);
+   color: #00FF00;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+   -moz-box-shadow: 1px 1px 10px #4169E1;
+   -webkit-box-shadow: 1px 1px 10px #4169E1;
+   box-shadow: 1px 1px 10px #4169E1;
+}
+#homey:hover
+{
+   -webkit-transform: rotate(0deg) scale(1.02,1.02);
+   -moz-transform: rotate(0deg) scale(1.02,1.02);
+   -ms-transform: rotate(0deg) scale(1.02,1.02);
+   transform: rotate(0deg) scale(1.02,1.02);
+   -webkit-transition: -webkit-transform 100ms linear 0ms;
+   -moz-transition: transform 100ms linear 0ms;
+   -ms-transition: transform 100ms linear 0ms;
+   transition: transform 100ms linear 0ms;
+}
+#jojadjust
+{
+   border: 1px #A9A9A9 solid;
+   background-color: transparent;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   text-align: center;
+   vertical-align: middle;
+}
+#homexy
+{
+   border: 0px #A9A9A9 solid;
+   -moz-border-radius: 35px;
+   -webkit-border-radius: 35px;
+   border-radius: 35px;
+   background-color: #F0F0F0;
+   background: -moz-radial-gradient(circle,#000000 0%,#1016A6 54%,#1016A6 81%,#57FFC0 100%);
+   background: -webkit-radial-gradient(circle,#000000 0%,#1016A6 54%,#1016A6 81%,#57FFC0 100%);
+   background: -o-radial-gradient(circle,#000000 0%,#1016A6 54%,#1016A6 81%,#57FFC0 100%);
+   background: -ms-radial-gradient(circle,#000000 0%,#1016A6 54%,#1016A6 81%,#57FFC0 100%);
+   background: radial-gradient(circle,#000000 0%,#1016A6 54%,#1016A6 81%,#57FFC0 100%);
+   color: #00FF00;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+   -moz-box-shadow: 1px 1px 10px #4169E1;
+   -webkit-box-shadow: 1px 1px 10px #4169E1;
+   box-shadow: 1px 1px 10px #4169E1;
+}
+#homexy:hover
+{
+   -webkit-transform: rotate(0deg) scale(1.02,1.02);
+   -moz-transform: rotate(0deg) scale(1.02,1.02);
+   -ms-transform: rotate(0deg) scale(1.02,1.02);
+   transform: rotate(0deg) scale(1.02,1.02);
+   -webkit-transition: -webkit-transform 100ms linear 0ms;
+   -moz-transition: transform 100ms linear 0ms;
+   -ms-transition: transform 100ms linear 0ms;
+   transition: transform 100ms linear 0ms;
+}
+#xwork
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   background: -moz-linear-gradient(bottom,#B8E1FC 0%,#A9D2F3 10%,#90BAE4 25%,#90BCEA 37%,#90BFF0 50%,#6BA8E5 50%,#A2DAF5 82%,#BDF3FD 100%);
+   background: -webkit-linear-gradient(bottom,#B8E1FC 0%,#A9D2F3 10%,#90BAE4 25%,#90BCEA 37%,#90BFF0 50%,#6BA8E5 50%,#A2DAF5 82%,#BDF3FD 100%);
+   background: -o-linear-gradient(bottom,#B8E1FC 0%,#A9D2F3 10%,#90BAE4 25%,#90BCEA 37%,#90BFF0 50%,#6BA8E5 50%,#A2DAF5 82%,#BDF3FD 100%);
+   background: -ms-linear-gradient(bottom,#B8E1FC 0%,#A9D2F3 10%,#90BAE4 25%,#90BCEA 37%,#90BFF0 50%,#6BA8E5 50%,#A2DAF5 82%,#BDF3FD 100%);
+   background: linear-gradient(bottom,#B8E1FC 0%,#A9D2F3 10%,#90BAE4 25%,#90BCEA 37%,#90BFF0 50%,#6BA8E5 50%,#A2DAF5 82%,#BDF3FD 100%);
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   text-align: left;
+   vertical-align: middle;
+}
+#LayerCordinate
+{
+   background-color: transparent;
+   border: 2px #000000 solid;
+}
+#xmachine
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   background: -moz-linear-gradient(bottom,#E2E2E2 0%,#DBDBDB 50%,#D1D1D1 50%,#FEFEFE 100%);
+   background: -webkit-linear-gradient(bottom,#E2E2E2 0%,#DBDBDB 50%,#D1D1D1 50%,#FEFEFE 100%);
+   background: -o-linear-gradient(bottom,#E2E2E2 0%,#DBDBDB 50%,#D1D1D1 50%,#FEFEFE 100%);
+   background: -ms-linear-gradient(bottom,#E2E2E2 0%,#DBDBDB 50%,#D1D1D1 50%,#FEFEFE 100%);
+   background: linear-gradient(bottom,#E2E2E2 0%,#DBDBDB 50%,#D1D1D1 50%,#FEFEFE 100%);
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   text-align: left;
+   vertical-align: middle;
+}
+
+ .My_TX
+{
+   border: 0px #00FA9A solid;
+   background-color: #FFFFFF;
+   background:    -moz-linear-gradient(bottom,#D0E4F7 0%,#73B1E7 23%,#0A77D5 50%,#539FE1 79%,#87BCEA 100%);
+   background: -webkit-linear-gradient(bottom,#D0E4F7 0%,#73B1E7 23%,#0A77D5 50%,#539FE1 79%,#87BCEA 100%);
+   background:      -o-linear-gradient(bottom,#D0E4F7 0%,#73B1E7 23%,#0A77D5 50%,#539FE1 79%,#87BCEA 100%);
+   background:     -ms-linear-gradient(bottom,#D0E4F7 0%,#73B1E7 23%,#0A77D5 50%,#539FE1 79%,#87BCEA 100%);
+   background:         linear-gradient(bottom,#D0E4F7 0%,#73B1E7 23%,#0A77D5 50%,#539FE1 79%,#87BCEA 100%);
+   color: #0000CD;
+   font-family: Tahoma;
+   font-weight: bold;
+   font-size: 15px;
+   text-align: center;
+}
+.My_BT
+{
+   border: 0px #A9A9A9 solid;
+   -moz-border-radius: 50px;
+   -webkit-border-radius: 50px;
+   border-radius: 50px;
+   
+   color: #000000;
+   font-family: Tahoma;
+   font-weight: normal;
+   font-size: 15px;
+   -moz-box-shadow: 0px 0px 10px #800080;
+   -webkit-box-shadow: 0px 0px 10px #800080;
+   box-shadow: 0px 0px 10px #800080;
+}
+.My_BT_big_off
+{
+ border: 0px #A9A9A9 solid;
+   -moz-border-radius: 50px;
+   -webkit-border-radius: 50px;
+   border-radius: 50px;
+   background-color: #FFFFFF;
+   background: -moz-radial-gradient(circle,#A06C40 0%,#A06C40 17%,#FF8000 33%,#FFFFFF 50%,#FF8000 67%,#A06C40 82%,#A06C40 100%);
+   background: -webkit-radial-gradient(circle,#A06C40 0%,#A06C40 17%,#FF8000 33%,#FFFFFF 50%,#FF8000 67%,#A06C40 82%,#A06C40 100%);
+   background: -o-radial-gradient(circle,#A06C40 0%,#A06C40 17%,#FF8000 33%,#FFFFFF 50%,#FF8000 67%,#A06C40 82%,#A06C40 100%);
+   background: -ms-radial-gradient(circle,#A06C40 0%,#A06C40 17%,#FF8000 33%,#FFFFFF 50%,#FF8000 67%,#A06C40 82%,#A06C40 100%);
+   background: radial-gradient(circle,#A06C40 0%,#A06C40 17%,#FF8000 33%,#FFFFFF 50%,#FF8000 67%,#A06C40 82%,#A06C40 100%);
+   color: #000080;
+   font-family: "Times New Roman";
+   font-weight: bold;
+   font-size: 15px;
+   -moz-box-shadow: 0px 10px 20px #2F4F4F;
+   -webkit-box-shadow: 0px 10px 20px #2F4F4F;
+   box-shadow: 0px 10px 20px #2F4F4F;
+}
+.My_BT_big
+{
+border: 0px #A9A9A9 solid;
+   -moz-border-radius: 50px;
+   -webkit-border-radius: 50px;
+   border-radius: 50px;
+   background-color: #FFFFFF;
+   background: -moz-radial-gradient(circle,#002840 0%,#002840 18%,#4ECAFD 50%,#002840 81%,#002840 100%);
+   background: -webkit-radial-gradient(circle,#002840 0%,#002840 18%,#4ECAFD 50%,#002840 81%,#002840 100%);
+   background: -o-radial-gradient(circle,#002840 0%,#002840 18%,#4ECAFD 50%,#002840 81%,#002840 100%);
+   background: -ms-radial-gradient(circle,#002840 0%,#002840 18%,#4ECAFD 50%,#002840 81%,#002840 100%);
+   background: radial-gradient(circle,#002840 0%,#002840 18%,#4ECAFD 50%,#002840 81%,#002840 100%);
+   color: #FAEBD7;
+   font-family: "Times New Roman";
+   font-weight: bold;
+   font-size: 15px;
+   -moz-box-shadow: 0px 10px 20px #696969;
+   -webkit-box-shadow: 0px 10px 20px #696969;
+   box-shadow: 0px 10px 20px #696969;
+}
+.My_BT_big:hover
+{
+	font-size: 19px;
+    -moz-box-shadow:  0px 15px 30px #4169E1;
+   -webkit-box-shadow:0px 15px 30px #4169E1;
+   box-shadow:        0px 15px 30px #4169E1;
+}
+ .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    text-align: right;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.accordion.active, .accordion:hover {
+    background-color: #ddd;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.accordion.active:after {
+    content: "\2212";
+}
+ 
+#Table1
+{
+   border: 2px #0000FF solid;
+   background-color: transparent;
+   border-spacing: 1px;
+    text-align: center;
+   vertical-align: middle;
+}
+#Table1 td
+{
+   padding: 1px 1px 1px 1px;
+}
+#Table1 td div
+{
+   white-space: nowrap;
+}
+#Table1 .cell0
+{
+   background-color: transparent;
+   border: 1px #C0C0C0 solid;
+   text-align: center;
+   vertical-align: middle;
+   width: 201px;
+   height: 23px;
+}
+#Table1 .cell1
+{
+   background-color: transparent;
+   border: 1px #C0C0C0 solid;
+   text-align: center;
+   vertical-align: middle;
+   width: 153px;
+   height: 23px;
+}
+#Table1 .cell2
+{
+   background-color: transparent;
+   border: 1px #C0C0C0 solid;
+   text-align: center;
+   vertical-align: middle;
+   width: 171px;
+   height: 23px;
+}
+#Table1 .cell3
+{
+   background-color: transparent;
+   border: 1px #C0C0C0 solid;
+   text-align: center;
+   vertical-align: middle;
+   height: 23px;
+}
+#okerror
+{
+   border: 0px #A9A9A9 solid;
+   -moz-border-radius: 28px;
+   -webkit-border-radius: 28px;
+   border-radius: 28px;
+   background-color: #FF0000;
+   color: #0000FF;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 15px;
+   -moz-box-shadow: 1px 1px 10px #4169E1;
+   -webkit-box-shadow: 1px 1px 10px #4169E1;
+   box-shadow: 1px 1px 10px #4169E1;
+}
+#okerror:hover
+{
+   -webkit-transform: rotate(0deg) scale(1.02,1.02);
+   -moz-transform: rotate(0deg) scale(1.02,1.02);
+   -ms-transform: rotate(0deg) scale(1.02,1.02);
+   transform: rotate(0deg) scale(1.02,1.02);
+   -webkit-transition: -webkit-transform 100ms linear 0ms;
+   -moz-transition: transform 100ms linear 0ms;
+   -ms-transition: transform 100ms linear 0ms;
+   transition: transform 100ms linear 0ms;
+}
+</style>
+
+<script src="Stand.js"></script>
+<script type="text/javascript">       
+          
+      window.onload = function ()
+      {
+      
+   //    Wave( "logo.png",'flag',8,200);
+   //   Wave( "images/logo1.png",'flag2',8,200);
+     setTimeout( initialize , 200);
+      }
+    
+</script>
+</head>
+<body>
+   <div id="container">
+<!-- _status -->
+      <div id="Hx_status" style="position:absolute;left:2px;top:149px;width:63px;height:40px;z-index:15">
+         <div id="_status" class="my_tab" style="position:absolute;display:none">
+     
+            <div id="Layerjog" style="position:fixed;text-align:left;left:0;top:140px;bottom:0;width:396px;z-index:69;">
+               <div id="wb_upjag" style="position:absolute;left:153px;top:3px;width:83px;height:75px;z-index:0;">
+                  <a href="#" onmousedown="JugD(0);return false;" onmouseup="JugU(0);return false;"><svg id="upjag_hover" class="hover" height="75" width="83" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                           <lineargradient id="upjag_hover_gradient" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="0%" y2="100%">
+                              <stop offset="0%" stop-color="#12579B"/>
+                              <stop offset="50%" stop-color="#166ABD"/>
+                              <stop offset="50%" stop-color="#1D8DFA"/>
+                              <stop offset="100%" stop-color="#1462AF"/>
+                           </lineargradient>
+                           <path id="upjag_hover_shape" d="M41 1 L83 76 L0 76Z "/>
+                        </defs>
+                        <clippath id="upjag_hover_clippath">
+                           <use xlink:href="#upjag_hover_shape"/>
+                        </clippath>
+                        <use xlink:href="#upjag_hover_shape" clip-path="url(#upjag_hover_clippath)" style="fill:url(#upjag_hover_gradient);stroke:#A0A0A0;stroke-width:0"/>
+                     </svg>
+                     <span><svg id="upjag" height="75" width="83" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                           <defs>
+                              <lineargradient id="upjag_gradient" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="0%" y2="100%">
+                                 <stop offset="0%" stop-color="#000054"/>
+                                 <stop offset="50%" stop-color="#000067"/>
+                                 <stop offset="50%" stop-color="#000088"/>
+                                 <stop offset="100%" stop-color="#00005F"/>
+                              </lineargradient>
+                              <path id="upjag_shape" d="M41 1 L83 76 L0 76Z "/>
+                           </defs>
+                           <clippath id="upjag_clippath">
+                              <use xlink:href="#upjag_shape"/>
+                           </clippath>
+                           <use xlink:href="#upjag_shape" clip-path="url(#upjag_clippath)" style="fill:url(#upjag_gradient);stroke:#FF4500;stroke-width:0"/>
+                        </svg>
+                     </span></a></div>
+               <div id="wb_rightjag" style="position:absolute;left:251px;top:95px;width:75px;height:83px;z-index:1;">
+                  <a href="#" onmousedown="JugD(2);return false;" onmouseup="JugU(2);return false;"><svg id="rightjag_hover" class="hover" height="83" width="75" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                           <lineargradient id="rightjag_hover_gradient" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="0%" y2="100%">
+                              <stop offset="0%" stop-color="#00749B"/>
+                              <stop offset="50%" stop-color="#008DBD"/>
+                              <stop offset="50%" stop-color="#00BBFA"/>
+                              <stop offset="100%" stop-color="#0083AF"/>
+                           </lineargradient>
+                           <path id="rightjag_hover_shape" d="M75 41 L0 83 L0 0Z "/>
+                        </defs>
+                        <clippath id="rightjag_hover_clippath">
+                           <use xlink:href="#rightjag_hover_shape"/>
+                        </clippath>
+                        <use xlink:href="#rightjag_hover_shape" clip-path="url(#rightjag_hover_clippath)" style="fill:url(#rightjag_hover_gradient);stroke:#A0A0A0;stroke-width:0"/>
+                     </svg>
+                     <span><svg id="rightjag" height="83" width="75" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                           <defs>
+                              <lineargradient id="rightjag_gradient" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="0%" y2="100%">
+                                 <stop offset="0%" stop-color="#00009B"/>
+                                 <stop offset="50%" stop-color="#0000BD"/>
+                                 <stop offset="50%" stop-color="#0000FA"/>
+                                 <stop offset="100%" stop-color="#0000AF"/>
+                              </lineargradient>
+                              <path id="rightjag_shape" d="M75 41 L0 83 L0 0Z "/>
+                           </defs>
+                           <clippath id="rightjag_clippath">
+                              <use xlink:href="#rightjag_shape"/>
+                           </clippath>
+                           <use xlink:href="#rightjag_shape" clip-path="url(#rightjag_clippath)" style="fill:url(#rightjag_gradient);stroke:#FF4500;stroke-width:0"/>
+                        </svg>
+                     </span></a></div>
+               <div id="wb_leftjog" style="position:absolute;left:62px;top:95px;width:75px;height:83px;z-index:2;">
+                  <a href="#" onmousedown="JugD(3);return false;" onmouseup="JugU(3);return false;"><svg id="leftjog_hover" class="hover" height="83" width="75" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                           <lineargradient id="leftjog_hover_gradient" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="0%" y2="100%">
+                              <stop offset="0%" stop-color="#00749B"/>
+                              <stop offset="50%" stop-color="#008DBD"/>
+                              <stop offset="50%" stop-color="#00BBFA"/>
+                              <stop offset="100%" stop-color="#0083AF"/>
+                           </lineargradient>
+                           <path id="leftjog_hover_shape" d="M0 41 L75 0 L75 83Z "/>
+                        </defs>
+                        <clippath id="leftjog_hover_clippath">
+                           <use xlink:href="#leftjog_hover_shape"/>
+                        </clippath>
+                        <use xlink:href="#leftjog_hover_shape" clip-path="url(#leftjog_hover_clippath)" style="fill:url(#leftjog_hover_gradient);stroke:#A0A0A0;stroke-width:0"/>
+                     </svg>
+                     <span><svg id="leftjog" height="83" width="75" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                           <defs>
+                              <lineargradient id="leftjog_gradient" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="0%" y2="100%">
+                                 <stop offset="0%" stop-color="#00007C"/>
+                                 <stop offset="50%" stop-color="#000097"/>
+                                 <stop offset="50%" stop-color="#0000C8"/>
+                                 <stop offset="100%" stop-color="#00008C"/>
+                              </lineargradient>
+                              <path id="leftjog_shape" d="M0 41 L75 0 L75 83Z "/>
+                           </defs>
+                           <clippath id="leftjog_clippath">
+                              <use xlink:href="#leftjog_shape"/>
+                           </clippath>
+                           <use xlink:href="#leftjog_shape" clip-path="url(#leftjog_clippath)" style="fill:url(#leftjog_gradient);stroke:#FF4500;stroke-width:0"/>
+                        </svg>
+                     </span></a></div>
+               <div id="wb_downjag" style="position:absolute;left:152px;top:193px;width:83px;height:75px;z-index:3;">
+                  <a href="#" onmousedown="JugD(1);return false;" onmouseup="JugU(1);return false;"><svg id="downjag_hover" class="hover" height="75" width="83" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                           <lineargradient id="downjag_hover_gradient" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="0%" y2="100%">
+                              <stop offset="0%" stop-color="#12579B"/>
+                              <stop offset="50%" stop-color="#166ABD"/>
+                              <stop offset="50%" stop-color="#1D8DFA"/>
+                              <stop offset="100%" stop-color="#1462AF"/>
+                           </lineargradient>
+                           <path id="downjag_hover_shape" d="M43 75 L1 0 L84 0Z "/>
+                        </defs>
+                        <clippath id="downjag_hover_clippath">
+                           <use xlink:href="#downjag_hover_shape"/>
+                        </clippath>
+                        <use xlink:href="#downjag_hover_shape" clip-path="url(#downjag_hover_clippath)" style="fill:url(#downjag_hover_gradient);stroke:#A0A0A0;stroke-width:0"/>
+                     </svg>
+                     <span><svg id="downjag" height="75" width="83" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                           <defs>
+                              <lineargradient id="downjag_gradient" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="0%" y2="100%">
+                                 <stop offset="0%" stop-color="#000054"/>
+                                 <stop offset="50%" stop-color="#000067"/>
+                                 <stop offset="50%" stop-color="#000088"/>
+                                 <stop offset="100%" stop-color="#00005F"/>
+                              </lineargradient>
+                              <path id="downjag_shape" d="M43 75 L1 0 L84 0Z "/>
+                           </defs>
+                           <clippath id="downjag_clippath">
+                              <use xlink:href="#downjag_shape"/>
+                           </clippath>
+                           <use xlink:href="#downjag_shape" clip-path="url(#downjag_clippath)" style="fill:url(#downjag_gradient);stroke:#FF4500;stroke-width:0"/>
+                        </svg>
+                     </span></a></div>
+               <input type="button" id="setdotum" onclick="SetDatum();return false;" name="" value="Set Datume" style="position:absolute;left:141px;top:83px;width:106px;height:106px;z-index:4;"><script>                     
+                      function SetDatum(){ _Connection.send('RAW=0x85 G91\n' );}
+                     
+               </script>
+               <input type="button" id="homey" onclick="Home('Y');return false;" name="" value="Home Y" style="position:absolute;left:316px;top:279px;width:56px;height:56px;z-index:5;">
+               <input type="button" id="homexy" onclick="Home('A');return false;" name="" value="Home XY" style="position:absolute;left:157px;top:273px;width:70px;height:70px;z-index:6;"><script>                     
+                      function Home(p){ if(p=='A') p=""; _Connection.send('RAW=$H'+p+'\n'); }
+                     
+               </script>
+               <input type="button" id="homex" onclick="Home('X');return false;" name="" value="Home X" style="position:absolute;left:12px;top:279px;width:56px;height:56px;z-index:7;">
+               <input type="range" id="jojadjust" onchange="JugIncNum();return false;" style="position:absolute;left:39px;top:354px;width:291px;height:18px;line-height:18px;z-index:8;" name="Editbox1" value="" autocomplete="off" min="1" max="100" step="5"><script>                     
+                      function JugIncNum(){ 
+                      JogNum=document.getElementById('jojadjust').value;
+                     }
+                     
+               </script>
+               <div id="wb_Text1yrty" style="position:absolute;left:113px;top:381px;width:160px;height:19px;z-index:9;text-align:left;">
+                  <span style="color:#000080;font-family:Arial;font-size:17px;"><strong>Jog Adjustment</strong></span></div>
+               <input type="range" id="feedrate" onchange="setFeedrate();return false;" style="position:absolute;left:39px;top:412px;width:232px;height:18px;line-height:18px;z-index:10;" name="Editbox1" value="" autocomplete="off" min="10" max="10000" step="10">
+               <script>                                          
+                     function setFeedrate(){ 
+                     FeedRate=document.getElementById('feedrate').value;
+                     document.getElementById('feedrateval').value=FeedRate;
+                     _Connection.send('RAW=G0 F'+FeedRate+'\n');
+                     }                    
+                     
+               </script>
+               <div id="wb_Text3" style="position:absolute;left:91px;top:441px;width:160px;height:19px;text-align:center;z-index:11;">
+                  <span style="color:#000080;font-family:Arial;font-size:17px;"><strong>Feed Rate</strong></span></div>
+               <input type="text" id="feedrateval" style="position:absolute;left:289px;top:407px;width:55px;height:25px;line-height:23px;z-index:12;" name="Editbox1" value="10" readonly="" class="My_TX">
+            </div>
+            <div id="Layer4444" style="position:absolute;text-align:center;left:150px;top:0px;width:83%;height:691px;z-index:70;">
+               <div id="Layer4444_Container" style="width:860px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+                  <input type="button" id="Bsssttyh" onclick="SendCommand();return false;" name="" value="Send" style="position:absolute;left:31px;top:296px;width:54px;height:25px;z-index:41;" class="My_BT">
+                  <input type="file" id="FileUpload" style="position:absolute;left:438px;top:297px;width:298px;height:23px;line-height:23px;z-index:42;" name="FileUpload1" class="My_BT">
+                  <input type="button" id="Bload" onclick="loadGcode();return false;" name="" value="Load" style="position:absolute;left:771px;top:296px;width:56px;height:25px;z-index:43;" class="My_BT">
+                  <div id="Layer3" style="position:absolute;text-align:left;left:334px;top:10px;width:449px;height:117px;z-index:44;">
+                     <input type="button" id="resetabort" onclick="CycleStartResume();return false;" name="" value="Reset/Abort" style="position:absolute;left:9px;top:7px;width:100px;height:100px;z-index:27;" class="My_BT_big"><script>                                 
+                                  function CycleStartResume(){ _Connection.send('RAW=~\n' );}
+                                 
+                     </script>
+                     <input type="button" id="startresume" onclick="start_send_gcode();return false;" name="" value="Start" style="position:absolute;left:120px;top:7px;width:100px;height:100px;z-index:28;" class="My_BT_big">
+                     <input type="button" id="feedhold" onclick="feedhold();return false;" name="" value="Feed Hold" style="position:absolute;left:231px;top:7px;width:100px;height:100px;z-index:29;" class="My_BT_big"><script>                                 
+                                  function feedhold(){ _Connection.send('RAW=!\n' );}
+                                 
+                     </script>
+                     <input type="button" id="fancool" onclick="ToggleFloodCoolant();return false;" name="" value="Fan On" style="position:absolute;left:340px;top:7px;width:100px;height:100px;z-index:30;" class="My_BT_big">
+                  </div>
+                  <div id="wb_Text2" style="position:absolute;left:41px;top:333px;width:68px;height:19px;z-index:45;text-align:left;">
+                     <span style="color:#000080;font-family:Arial;font-size:17px;"><strong>Output</strong></span></div>
+                  <input type="button" id="Button1" onclick="check_boundry();return false;" name="" value="Check Bound" style="position:absolute;left:638px;top:217px;width:111px;height:25px;z-index:46;" class="My_BT">
+                  <div id="wb_Text1" style="position:absolute;left:460px;top:334px;width:55px;height:19px;z-index:47;text-align:left;">
+                     <span style="color:#000080;font-family:Arial;font-size:17px;"><strong>Input</strong></span></div>
+                  <input type="text" id="wide" style="position:absolute;left:610px;top:260px;width:63px;height:23px;line-height:23px;z-index:48;" name="Editbox2" value="" class="My_TX">
+                  <input type="text" id="lenght" style="position:absolute;left:487px;top:260px;width:63px;height:23px;line-height:23px;z-index:49;" name="Editbox2" value="" class="My_TX">
+                  <input type="text" id="duration" style="position:absolute;left:749px;top:260px;width:63px;height:23px;line-height:23px;z-index:50;" name="Editbox2" value="" class="My_TX">
+                  <div id="wb_Text5" style="position:absolute;left:436px;top:264px;width:57px;height:17px;z-index:51;text-align:left;">
+                     <span style="color:#000000;font-family:Arial;font-size:13px;"> </span><span style="color:#000080;font-family:Arial;font-size:15px;">Length</span></div>
+                  <div id="wb_Text6" style="position:absolute;left:684px;top:264px;width:72px;height:17px;z-index:52;text-align:left;">
+                     <span style="color:#000080;font-family:Arial;font-size:15px;">Duration</span></div>
+                  <textarea name="TextArea1" id="output" style="position:absolute;left:31px;top:359px;width:398px;height:298px;z-index:53;" rows="17" cols="63"></textarea>
+                  <input type="text" id="commandtype" style="position:absolute;left:149px;top:293px;width:164px;height:23px;line-height:23px;z-index:54;" name="Editbox2" value="" class="My_TX">
+                  <input type="button" id="Brtfgv" onclick="SendPreCommand();return false;" name="" value="Send" style="position:absolute;left:31px;top:254px;width:54px;height:25px;z-index:55;" class="My_BT">
+                  <select name="Combobox1" size="1" id="commands" style="position:absolute;left:150px;top:254px;width:166px;height:25px;z-index:56;">
+                     <option selected="" value="$#">View gcode parameters</option>
+                     <option value="G21">G21</option>
+                     <option value="$G">View gcode parser state</option>
+                     <option value="$N">View startup blocks</option>
+                     <option value="$C">Check gcode mode</option>
+                  </select>
+                  <div id="LayerCordinate" style="position:absolute;text-align:left;left:40px;top:10px;width:255px;height:153px;z-index:57;">
+                     <input type="text" id="xwork" style="position:absolute;left:142px;top:33px;width:88px;height:28px;line-height:28px;z-index:31;" name="Editbox2" value="" class="My_TX">
+                     <input type="text" id="xmachine" style="position:absolute;left:36px;top:33px;width:88px;height:28px;line-height:28px;z-index:32;" name="Editbox2" value="" class="My_TX">
+                     <div id="wb_Tefddxt2" style="position:absolute;left:13px;top:37px;width:23px;height:23px;z-index:33;text-align:left;">
+                        <span style="color:#000080;font-family:'Times New Roman';font-size:20px;"><strong>X</strong></span></div>
+                     <div id="wb_Text3df" style="position:absolute;left:13px;top:81px;width:23px;height:23px;z-index:34;text-align:left;">
+                        <span style="color:#000080;font-family:'Times New Roman';font-size:20px;"><strong>Y</strong></span></div>
+                     <div id="wb_Teghdxt5" style="position:absolute;left:146px;top:7px;width:109px;height:15px;z-index:35;text-align:left;">
+                        <span style="color:#000080;font-family:'Times New Roman';font-size:13px;"><strong>Work Coordinates</strong></span></div>
+                     <div id="wb_Texgfsdt4" style="position:absolute;left:13px;top:7px;width:133px;height:15px;z-index:36;text-align:left;">
+                        <span style="color:#000080;font-family:'Times New Roman';font-size:13px;"><strong>Machine Coordinates</strong></span></div>
+                     <input type="text" id="ymachine" style="position:absolute;left:36px;top:74px;width:88px;height:28px;line-height:28px;z-index:37;" name="Editbox2" value="" class="My_TX">
+                     <input type="text" id="ywork" style="position:absolute;left:142px;top:74px;width:88px;height:28px;line-height:28px;z-index:38;" name="Editbox2" value="" class="My_TX">
+                     <input type="text" id="currentline" style="position:absolute;left:142px;top:114px;width:88px;height:28px;line-height:28px;z-index:39;" name="Editbox2" value="" class="My_TX">
+                     <div id="wb_Text7" style="position:absolute;left:36px;top:118px;width:90px;height:15px;z-index:40;text-align:left;">
+                        <span style="color:#000080;font-family:'Times New Roman';font-size:13px;"><strong>Current Line</strong></span></div>
+                  </div>
+                  <textarea name="TextArea1" id="input" style="position:absolute;left:440px;top:359px;width:398px;height:298px;z-index:58;" rows="17" cols="63"></textarea>
+                  <input type="text" id="messageAlarm" style="position:absolute;left:149px;top:179px;width:164px;height:23px;line-height:23px;z-index:59;" name="Editbox1" value="">
+                  <input type="text" id="errorDes" style="position:absolute;left:149px;top:217px;width:164px;height:23px;line-height:23px;z-index:60;" name="Editbox1" value="" class="My_TX">
+                  <div id="wb_Text4" style="position:absolute;left:27px;top:217px;width:133px;height:17px;z-index:61;text-align:left;">
+                     <span style="color:#000080;font-family:Arial;font-size:15px;">Error Description </span></div>
+                  <div id="wb_Text8" style="position:absolute;left:559px;top:264px;width:47px;height:17px;z-index:62;text-align:left;">
+                     <span style="color:#000080;font-family:Arial;font-size:15px;">Wide </span></div>
+                  <div id="wb_Text9" style="position:absolute;left:27px;top:183px;width:122px;height:17px;z-index:63;text-align:left;">
+                     <span style="color:#000080;font-family:Arial;font-size:15px;">Message Alaram </span></div>
+                  <input type="button" id="okerror" onclick="Home('Y');return false;" name="" value="Error" style="position:absolute;left:366px;top:262px;width:56px;height:56px;z-index:64;">
+                  <input type="button" id="Buttofsvhhh" onclick="Killalarmlock();return false;" name="" value="Kill alarm lock" style="position:absolute;left:650px;top:147px;width:104px;height:30px;z-index:65;" class="My_BT"><script>                           
+                            function Killalarmlock(){ _Connection.send('RAW=$X\n' );}
+                           
+                  </script>
+                  <input type="button" id="Button2" onclick="softreset();return false;" name="" value="Soft Restart" style="position:absolute;left:522px;top:148px;width:104px;height:30px;z-index:66;" class="My_BT"><script>                           
+                            function softreset(){ _Connection.send('RAW=0x18\n' );}
+                           
+                  </script>
+                  <input type="button" id="Button3" onclick="Killalarmlock();return false;" name="" value="Hard Restart" style="position:absolute;left:380px;top:149px;width:104px;height:30px;z-index:67;" class="My_BT"><script>                           
+                            function Killalarmlock(){ _Connection.send('RAW=$X\n' );}
+                           
+                  </script>
+                  <input type="button" id="Bdfgutton4" onclick="Movearound();return false;" name="" value="Move around" style="position:absolute;left:382px;top:217px;width:111px;height:25px;z-index:68;" class="My_BT">
+               </div>
+            </div>
+     
+     
+     
+         </div></div>
+<!-- _setting -->
+      <div id="Ht_setting" style="position:absolute;left:2px;top:189px;width:53px;height:57px;z-index:16">
+         <div id="_setting" class="my_tab" style="position:absolute;display:none">
+  
+            <button class="accordion">CNC Setting </button>
+            <div id="layer_of_general" style="position:absolute;text-align:left;left:0px;top:1px;width:794px;height:1379px;z-index:174;position:relative;top:0;" class="panel">
+               <div id="wb_Text2" style="position:absolute;left:293px;top:13px;width:138px;height:18px;text-align:right;z-index:74;" class="myText">
+                  <span style="color:#000000;font-family:Tahoma;font-size:13px;"><strong>Advance Setting<br></strong></span></div>
+               <div id="Layer1" style="position:absolute;text-align:left;left:23px;top:49px;width:701px;height:1289px;z-index:75;">
+                  <input type="text" id="stepideldisa" style="position:absolute;left:561px;top:126px;width:35px;height:23px;line-height:23px;z-index:0;" name="Editbox1" value="255"   class="My_TX">
+                  <input type="text" id="_Steppulsetime" style="position:absolute;left:561px;top:93px;width:35px;height:23px;line-height:23px;z-index:1;" name="Editbox1" value="10"   class="My_TX">
+                  <table style="position:absolute;left:12px;top:57px;width:662px;height:1217px;z-index:2;" cellpadding="1" cellspacing="1" id="Table1">
+                     <tr>
+                        <td class="cell0"><span style="color:#000000;font-family:Arial;font-size:16px;line-height:19px;"><strong>Parameter</strong></span></td>
+                        <td class="cell1"><span style="color:#000000;font-family:Arial;font-size:16px;line-height:19px;"><strong>Unite</strong></span></td>
+                        <td class="cell2"><span style="color:#000000;font-family:Arial;font-size:16px;line-height:19px;"><strong>Value</strong></span></td>
+                        <td class="cell3"><span style="color:#000000;font-family:Arial;font-size:16px;line-height:19px;"><strong>Set</strong></span></td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> Step pulse time</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> microseconds</span></td>
+                        <td class="cell6"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> </span></td>
+                        <td class="cell7"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> </span></td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> Step idle delay disabling </span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> milliseconds</span></td>
+                        <td class="cell6"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> </span></td>
+                        <td class="cell7"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> </span></td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> Step port pulse invert</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> mask</span></td>
+                        <td class="cell6"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> </span></td>
+                        <td class="cell7"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> </span></td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">Step direction invert</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">mask </span></td>
+                        <td class="cell6"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> </span></td>
+                        <td class="cell7"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> </span></td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> Invert step enable pin</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> boolean</span></td>
+                        <td class="cell6"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> </span></td>
+                        <td class="cell7"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> </span></td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> Invert limit pins</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> boolean</span></td>
+                        <td class="cell6"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> </span></td>
+                        <td class="cell7"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> </span></td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> Invert probe pin</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> boolean</span></td>
+                        <td class="cell6"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> </span></td>
+                        <td class="cell7"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"> </span></td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">Status report options</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">mask </span></td>
+                        <td class="cell6">&nbsp;</td>
+                        <td class="cell7">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">Junction deviation</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">millimeters</span></td>
+                        <td class="cell6">&nbsp;</td>
+                        <td class="cell7">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">Arc tolerance</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">millimeters</span></td>
+                        <td class="cell6">&nbsp;</td>
+                        <td class="cell7">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">Report in inches</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">boolean</span></td>
+                        <td class="cell6">&nbsp;</td>
+                        <td class="cell7">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">Soft limits enable</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">boolean</span></td>
+                        <td class="cell6">&nbsp;</td>
+                        <td class="cell7">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">Hard limits enable</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">boolean</span></td>
+                        <td class="cell6">&nbsp;</td>
+                        <td class="cell7">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">Homing cycle enable</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">boolean</span></td>
+                        <td class="cell6">&nbsp;</td>
+                        <td class="cell7">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">Homing direction invert</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">mask</span></td>
+                        <td class="cell6">&nbsp;</td>
+                        <td class="cell7">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">Homing locate feed rate</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">mm/min</span></td>
+                        <td class="cell6">&nbsp;</td>
+                        <td class="cell7">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell8"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">Homing search seek rate</span></td>
+                        <td class="cell9"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">mm/min</span></td>
+                        <td class="cell10">&nbsp;</td>
+                        <td class="cell11">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell8"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">Homing switch debounce delay</span></td>
+                        <td class="cell9"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">milliseconds</span></td>
+                        <td class="cell10">&nbsp;</td>
+                        <td class="cell11">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">Homing switch pull-off distance</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">millimeters</span></td>
+                        <td class="cell6">&nbsp;</td>
+                        <td class="cell7">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">Maximum spindle speed</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">RPM</span></td>
+                        <td class="cell6">&nbsp;</td>
+                        <td class="cell7">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">Minimum spindle speed</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">RPM</span></td>
+                        <td class="cell6">&nbsp;</td>
+                        <td class="cell7">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">Laser-mode enable</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">boolean</span></td>
+                        <td class="cell6">&nbsp;</td>
+                        <td class="cell7">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell12"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">X-axis steps per millimeter</span></td>
+                        <td class="cell13"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">S/mm</span></td>
+                        <td class="cell14">&nbsp;</td>
+                        <td class="cell15">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell12"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">Y-axis steps per millimeter</span></td>
+                        <td class="cell13"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">S/mm</span></td>
+                        <td class="cell14">&nbsp;</td>
+                        <td class="cell15">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">Z-axis steps per millimeter</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">S/mm</span></td>
+                        <td class="cell6">&nbsp;</td>
+                        <td class="cell7">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">X-axis maximum rate</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">mm/min</span></td>
+                        <td class="cell6">&nbsp;</td>
+                        <td class="cell7">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">Y-axis maximum rate</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">mm/min</span></td>
+                        <td class="cell6">&nbsp;</td>
+                        <td class="cell7">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">Z-axis maximum rate</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">mm/min</span></td>
+                        <td class="cell6">&nbsp;</td>
+                        <td class="cell7">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">X-axis acceleration</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">mm/sec^2</span></td>
+                        <td class="cell6">&nbsp;</td>
+                        <td class="cell7">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell12"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">Y-axis acceleration</span></td>
+                        <td class="cell13"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">mm/sec^2</span></td>
+                        <td class="cell14">&nbsp;</td>
+                        <td class="cell15">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell12"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">Z-axis acceleration</span></td>
+                        <td class="cell13"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">mm/sec^2</span></td>
+                        <td class="cell14">&nbsp;</td>
+                        <td class="cell15">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">X-axis maximum travel</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">millimeters</span></td>
+                        <td class="cell6">&nbsp;</td>
+                        <td class="cell7">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">Y-axis maximum travel</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">millimeters</span></td>
+                        <td class="cell6">&nbsp;</td>
+                        <td class="cell7">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">Z-axis maximum travel</span></td>
+                        <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">millimeters</span></td>
+                        <td class="cell6">&nbsp;</td>
+                        <td class="cell7">&nbsp;</td>
+                     </tr>
+                  </table>
+                  <input type="range" id="steppulsetime" onchange="change_tb(this.id,'_Steppulsetime');return false;" style="position:absolute;left:393px;top:94px;width:127px;height:18px;line-height:18px;z-index:3;" name="Editbox1" value="" autocomplete="off" min="10" max="100" step="5">
+                  <input type="range" id="step_id_eldisa" onchange="change_tb(this.id,'stepideldisa');return false;" style="position:absolute;left:393px;top:128px;width:127px;height:18px;line-height:18px;z-index:4;" name="Editbox1" value="" autocomplete="off" min="0" max="255" step="5">
+                  <script>                           
+                           function change_tb(id_r,id_tx)
+                           {
+                           document.getElementById(id_tx).value=document.getElementById(id_r).value;
+                           
+                           }
+                           
+                  </script>
+                  <input type="button" id="Button2" onclick="send_setting(0,10,200,'_Steppulsetime');return false;" name="" value="Set" style="position:absolute;left:614px;top:93px;width:47px;height:25px;z-index:5;" class="My_BT">
+                  <input type="button" id="Butdfgton2" onclick="send_setting(1,0,255,'stepideldisa');return false;" name="" value="Set" style="position:absolute;left:614px;top:126px;width:47px;height:25px;z-index:6;" class="My_BT">
+                  <select name="Combobox1" size="1" id="invertport" style="position:absolute;left:393px;top:161px;width:129px;height:25px;z-index:7;" class="My_TX">
+                     <option selected="" value="0">No Invert</option>
+                     <option value="1">Invert X</option>
+                     <option value="2">Invert Y</option>
+                     <option value="3">Invert XY</option>
+                     <option value="4">Invert Z</option>
+                     <option value="5">Invert XZ</option>
+                     <option value="6">Invert YZ</option>
+                     <option value="7">Invert XYZ</option>
+                  </select>
+                  <input type="button" id="Button3" onclick="Send_selection_val(2,'invertport');return false;" name="" value="Set" style="position:absolute;left:566px;top:161px;width:84px;height:25px;z-index:8;" class="My_BT">
+                  <select name="Combobox1" size="1" id="invertdirection" style="position:absolute;left:393px;top:194px;width:129px;height:25px;z-index:9;" class="My_TX">
+                     <option selected="" value="0">No Invert</option>
+                     <option value="1">Invert X</option>
+                     <option value="2">Invert Y</option>
+                     <option value="3">Invert XY</option>
+                     <option value="4">Invert Z</option>
+                     <option value="5">Invert XZ</option>
+                     <option value="6">Invert YZ</option>
+                     <option value="7">Invert XYZ</option>
+                  </select>
+                  <input type="button" id="Button4" onclick="Send_selection_val(3,'invertdirection');return false;" name="" value="Set" style="position:absolute;left:566px;top:195px;width:84px;height:25px;z-index:10;" class="My_BT">
+                  <input type="button" id="Buttdfon5" onclick="Send_selection_val(4,'invertenable');return false;" name="" value="Set" style="position:absolute;left:566px;top:229px;width:84px;height:25px;z-index:11;" class="My_BT">
+                  <select name="Combobox1" size="1" id="invertenable" style="position:absolute;left:393px;top:229px;width:129px;height:25px;z-index:12;" class="My_TX">
+                     <option selected="" value="1">Enable</option>
+                     <option value="0">Disable</option>
+                  </select>
+                  <select name="Combobox1" size="1" id="Invertlimit" style="position:absolute;left:393px;top:263px;width:129px;height:25px;z-index:13;" class="My_TX">
+                     <option selected="" value="1">Normally-high </option>
+                     <option value="0">Normally-low</option>
+                  </select>
+                  <input type="button" id="Bterutton554" onclick="Send_selection_val(5,'Invertlimit');return false;" name="" value="Set" style="position:absolute;left:566px;top:262px;width:84px;height:25px;z-index:14;" class="My_BT">
+                  <select name="Combobox1" size="1" id="_Invertprobe" style="position:absolute;left:393px;top:297px;width:129px;height:25px;z-index:15;" class="My_TX">
+                     <option selected="" value="1">Normally-high </option>
+                     <option value="0">Normally-low</option>
+                  </select>
+                  <input type="button" id="Button5twe" onclick="Send_selection_val(6,'_Invertprobe');return false;" name="" value="Set" style="position:absolute;left:566px;top:295px;width:84px;height:25px;z-index:16;" class="My_BT">
+                  <select name="Combobox1" size="1" id="Statusreport" style="position:absolute;left:393px;top:331px;width:129px;height:25px;z-index:17;" class="My_TX">
+                     <option selected="" value="1">Position Type</option>
+                     <option value="2">Buffer Data</option>
+                  </select>
+                  <input type="button" id="Buwertton6" onclick="Send_selection_val(10,'Statusreport');return false;" name="" value="Set" style="position:absolute;left:566px;top:332px;width:84px;height:25px;z-index:18;" class="My_BT">
+                  <input type="button" id="Button5junc" onclick="send_setting(11,0,10,'junc');return false;" name="" value="Set" style="position:absolute;left:566px;top:366px;width:84px;height:25px;z-index:19;" class="My_BT">
+                  <input type="text" id="junc" style="position:absolute;left:393px;top:366px;width:127px;height:23px;line-height:23px;z-index:20;" name="Editbox1" value=".01"   class="My_TX">
+                  <input type="text" id="arctolerance" style="position:absolute;left:393px;top:399px;width:127px;height:23px;line-height:23px;z-index:21;" name="Editbox1" value=".002"   class="My_TX">
+                  <input type="button" id="Button5" onclick="send_setting(12,0,1,'arctolerance');return false;" name="" value="Set" style="position:absolute;left:566px;top:399px;width:84px;height:25px;z-index:22;" class="My_BT">
+                  <select name="Combobox1" size="1" id="reportinunite" style="position:absolute;left:393px;top:434px;width:129px;height:25px;z-index:23;" class="My_TX">
+                     <option selected="" value="1">Report in inc</option>
+                     <option value="0">Report in mm</option>
+                  </select>
+                  <input type="button" id="Button6" onclick="Send_selection_val(13,'reportinunite');return false;" name="" value="Set" style="position:absolute;left:566px;top:433px;width:84px;height:25px;z-index:24;" class="My_BT">
+                  <select name="Combobox1" size="1" id="softlimit" style="position:absolute;left:393px;top:468px;width:129px;height:25px;z-index:25;" class="My_TX">
+                     <option selected="" value="1">Enable</option>
+                     <option value="0">Disable</option>
+                  </select>
+                  <input type="button" id="Button7" onclick="Send_selection_val(20,'softlimit');return false;" name="" value="Set" style="position:absolute;left:567px;top:468px;width:84px;height:25px;z-index:26;" class="My_BT">
+                  <select name="Combobox1" size="1" id="hardlimit" style="position:absolute;left:393px;top:503px;width:129px;height:25px;z-index:27;" class="My_TX">
+                     <option selected="" value="1">Enable</option>
+                     <option value="0">Disable</option>
+                  </select>
+                  <input type="button" id="Button8" onclick="Send_selection_val(21,'hardlimit');return false;" name="" value="Set" style="position:absolute;left:567px;top:501px;width:84px;height:25px;z-index:28;" class="My_BT">
+                  <select name="Combobox1" size="1" id="homecycle" style="position:absolute;left:393px;top:535px;width:129px;height:25px;z-index:29;" class="My_TX">
+                     <option selected="" value="1">Enable</option>
+                     <option value="0">Disable</option>
+                  </select>
+                  <input type="button" id="Button9" onclick="Send_selection_val(22,'homecycle');return false;" name="" value="Set" style="position:absolute;left:567px;top:534px;width:84px;height:25px;z-index:30;" class="My_BT">
+                  <select name="Combobox1" size="1" id="homedirinv" style="position:absolute;left:393px;top:569px;width:129px;height:25px;z-index:31;" class="My_TX">
+                     <option selected="" value="0">No Invert</option>
+                     <option value="1">Invert X</option>
+                     <option value="2">Invert Y</option>
+                     <option value="3">Invert XY</option>
+                     <option value="4">Invert Z</option>
+                     <option value="5">Invert XZ</option>
+                     <option value="6">Invert YZ</option>
+                     <option value="7">Invert XYZ</option>
+                  </select>
+                  <input type="button" id="Button10" onclick="Send_selection_val(23,'homedirinv');return false;" name="" value="Set" style="position:absolute;left:567px;top:569px;width:84px;height:25px;z-index:32;" class="My_BT">
+                  <input type="text" id="homeLFR" style="position:absolute;left:393px;top:603px;width:127px;height:23px;line-height:23px;z-index:33;" name="Editbox1" value="25"   class="My_TX">
+                  <input type="text" id="homeSFR" style="position:absolute;left:393px;top:640px;width:127px;height:23px;line-height:23px;z-index:34;" name="Editbox1" value="500"   class="My_TX">
+                  <input type="button" id="Button12" onclick="send_setting(12,0,1,'arctolerance');return false;" name="" value="Set" style="position:absolute;left:567px;top:603px;width:84px;height:25px;z-index:35;" class="My_BT">
+                  <input type="button" id="Button11" onclick="send_setting(12,0,1,'arctolerance');return false;" name="" value="Set" style="position:absolute;left:567px;top:640px;width:84px;height:25px;z-index:36;" class="My_BT">
+                  <input type="range" id="homedebounce" onchange="change_tb(this.id,'homedebun');return false;" style="position:absolute;left:393px;top:679px;width:127px;height:18px;line-height:18px;z-index:37;" name="Editbox1" value="" autocomplete="off" min="25" max="255" step="5">
+
+                  <input type="text" id="homedebun" style="position:absolute;left:567px;top:677px;width:35px;height:23px;line-height:23px;z-index:38;" name="Editbox1" value="255"   class="My_TX">
+                  <input type="button" id="Button13" onclick="send_setting(0,10,200,'homedebun');return false;" name="" value="Set" style="position:absolute;left:614px;top:678px;width:47px;height:25px;z-index:39;" class="My_BT">
+                  <input type="text" id="hometelorance" style="position:absolute;left:393px;top:713px;width:127px;height:23px;line-height:23px;z-index:40;" name="Editbox1" value="1"   class="My_TX">
+                  <input type="button" id="Button14" onclick="send_setting(12,0,1,'arctolerance');return false;" name="" value="Set" style="position:absolute;left:566px;top:714px;width:84px;height:25px;z-index:41;" class="My_BT">
+                  <input type="text" id="maxspindel" style="position:absolute;left:393px;top:746px;width:127px;height:23px;line-height:23px;z-index:42;" name="Editbox1" value="5"   class="My_TX">
+                  <input type="text" id="minspindle" style="position:absolute;left:393px;top:780px;width:127px;height:23px;line-height:23px;z-index:43;" name="Editbox1" value=".02"   class="My_TX">
+                  <input type="button" id="Button15" onclick="send_setting(12,0,1,'arctolerance');return false;" name="" value="Set" style="position:absolute;left:566px;top:746px;width:84px;height:25px;z-index:44;" class="My_BT">
+                  <input type="button" id="Button16" onclick="send_setting(12,0,1,'arctolerance');return false;" name="" value="Set" style="position:absolute;left:566px;top:780px;width:84px;height:25px;z-index:45;" class="My_BT">
+                  <input type="button" id="Button17" onclick="Send_selection_val(10,'Statusreport');return false;" name="" value="Set" style="position:absolute;left:566px;top:813px;width:84px;height:25px;z-index:46;" class="My_BT">
+                  <input type="button" id="Button18" onclick="send_setting(100,1,10000,'stepx');return false;" name="" value="Set" style="position:absolute;left:566px;top:850px;width:84px;height:25px;z-index:47;" class="My_BT">
+                  <input type="button" id="Button19" onclick="send_setting(101,1,10000,'stepy');return false;" name="" value="Set" style="position:absolute;left:567px;top:888px;width:84px;height:25px;z-index:48;" class="My_BT">
+                  <input type="button" id="Button20" onclick="send_setting(102,1,10000,'stepz');return false;" name="" value="Set" style="position:absolute;left:568px;top:928px;width:84px;height:25px;z-index:49;" class="My_BT">
+                  <input type="button" id="Button21" onclick="send_setting(110,1,10000,'velox');return false;" name="" value="Set" style="position:absolute;left:567px;top:962px;width:84px;height:25px;z-index:50;" class="My_BT">
+                  <input type="button" id="Button22" onclick="send_setting(111,1,10000,'veloy');return false;" name="" value="Set" style="position:absolute;left:567px;top:996px;width:84px;height:25px;z-index:51;" class="My_BT">
+                  <input type="button" id="Button23" onclick="send_setting(112,1,10000,'veloz');return false;" name="" value="Set" style="position:absolute;left:568px;top:1029px;width:84px;height:25px;z-index:52;" class="My_BT">
+                  <input type="button" id="Button24" onclick="send_setting(120,1,1000,'accx');return false;" name="" value="Set" style="position:absolute;left:567px;top:1063px;width:84px;height:25px;z-index:53;" class="My_BT">
+                  <input type="button" id="Button25" onclick="send_setting(121,1,1000,'accy');return false;" name="" value="Set" style="position:absolute;left:566px;top:1100px;width:84px;height:25px;z-index:54;" class="My_BT">
+                  <input type="button" id="Button26" onclick="send_setting(122,1,1000,'accz');return false;" name="" value="Set" style="position:absolute;left:566px;top:1138px;width:84px;height:25px;z-index:55;" class="My_BT">
+                  <input type="button" id="Button27" onclick="send_setting(130,100,2000,'lenx');return false;" name="" value="Set" style="position:absolute;left:567px;top:1176px;width:84px;height:25px;z-index:56;" class="My_BT">
+                  <input type="button" id="Button28" onclick="send_setting(131,100,2000,'leny');return false;" name="" value="Set" style="position:absolute;left:566px;top:1208px;width:84px;height:25px;z-index:57;" class="My_BT">
+                  <input type="button" id="Button29" onclick="send_setting(132,100,2000,'lenz');return false;" name="" value="Set" style="position:absolute;left:566px;top:1240px;width:84px;height:25px;z-index:58;" class="My_BT">
+                  <select name="Combobox1" size="1" id="lasermode" style="position:absolute;left:393px;top:818px;width:129px;height:25px;z-index:59;" class="My_TX">
+                     <option selected="" value="1">Enable</option>
+                     <option value="0">Disable</option>
+                  </select>
+                  <input type="text" id="stepx" style="position:absolute;left:393px;top:850px;width:127px;height:23px;line-height:23px;z-index:60;" name="Editbox1" value="250"   class="My_TX">
+                  <input type="text" id="stepy" style="position:absolute;left:393px;top:888px;width:127px;height:23px;line-height:23px;z-index:61;" name="Editbox1" value="250"   class="My_TX">
+                  <input type="text" id="stepz" style="position:absolute;left:393px;top:928px;width:127px;height:23px;line-height:23px;z-index:62;" name="Editbox1" value="250"   class="My_TX">
+                  <input type="text" id="velox" style="position:absolute;left:393px;top:962px;width:127px;height:23px;line-height:23px;z-index:63;" name="Editbox1" value="500"   class="My_TX">
+                  <input type="text" id="veloy" style="position:absolute;left:393px;top:996px;width:127px;height:23px;line-height:23px;z-index:64;" name="Editbox1" value="500"   class="My_TX">
+                  <input type="text" id="veloz" style="position:absolute;left:393px;top:1029px;width:127px;height:23px;line-height:23px;z-index:65;" name="Editbox1" value="500"   class="My_TX">
+                  <input type="text" id="accx" style="position:absolute;left:393px;top:1063px;width:127px;height:23px;line-height:23px;z-index:66;" name="Editbox1" value="10"   class="My_TX">
+                  <input type="text" id="accy" style="position:absolute;left:393px;top:1100px;width:127px;height:23px;line-height:23px;z-index:67;" name="Editbox1" value="10"   class="My_TX">
+                  <input type="text" id="accz" style="position:absolute;left:393px;top:1138px;width:127px;height:23px;line-height:23px;z-index:68;" name="Editbox1" value="10"   class="My_TX">
+                  <input type="text" id="lenx" style="position:absolute;left:393px;top:1175px;width:127px;height:23px;line-height:23px;z-index:69;" name="Editbox1" value="900"   class="My_TX">
+                  <input type="text" id="leny" style="position:absolute;left:393px;top:1208px;width:127px;height:23px;line-height:23px;z-index:70;" name="Editbox1" value="1200"   class="My_TX">
+                  <input type="text" id="lenz" style="position:absolute;left:393px;top:1240px;width:127px;height:23px;line-height:23px;z-index:71;" name="Editbox1" value="1"   class="My_TX">
+                  <input type="button" id="Bssssdfast1" onclick="defaultSetting();return false;" name="" value="Defult Setting" style="position:absolute;left:543px;top:16px;width:118px;height:25px;z-index:72;" class="My_BT"><script>                           
+                            function defaultSetting(){ _Connection.send('RAW=$RST=$\n'); }
+                           
+                  </script>
+                  <input type="button" id="utyun30"     onclick="buidInfo();return false;"       name="" value="Retrive build info" style="position:absolute;left:51px;top:16px;width:118px;height:25px;z-index:73;" class="My_BT">				 
+               </div>
+            </div>
+            <button class="accordion">General Setting </button>
+            <div id="layer_of_appliance" style="position:absolute;text-align:left;left:0px;top:1390px;width:794px;height:344px;z-index:175;position:relative;top:0;" class="panel">
+   
+            </div>
+   
+  
+         </div></div>
+<!-- _wifi -->
+      <div id="Hc_wifi" style="position:absolute;left:35px;top:189px;width:71px;height:57px;z-index:17">
+         <div id="_wifi" class="my_tab" style="position:absolute;display:none">
+  
+            <div id="wb_Tekhjxt21" style="position:absolute;left:46px;top:16px;width:122px;height:19px;text-align:right;z-index:0;">
+               <span style="color:#000000;font-family:Tahoma;font-size:16px;">Wifi Func </span>
+            </div>
+            <select name="Combobox1" size="1" id="WFM" style="position:absolute;left:180px;top:14px;width:117px;height:26px;z-index:1;" class="My_TX">
+               <option value="Access Point">AP</option>
+               <option selected="" value="Station">Station</option>
+            </select>
+            <div id="wb_Texnbvmbnt1" style="position:absolute;left:5px;top:143px;width:174px;height:19px;z-index:2;text-align:left;">
+               <span style="color:#000000;font-family:Tahoma;font-size:16px;">Eq name </span>
+            </div>
+            <div id="wb_Tenbnxt2" style="position:absolute;left:20px;top:55px;width:148px;height:21px;text-align:right;z-index:3;">
+               <span style="color:#000000;font-family:Tahoma;font-size:16px;">Server IP</span><span style="color:#000000;font-family:Arial;font-size:8px;"><br></span>
+            </div>
+            <input type="text" id="SIP" onchange="CheckIP(this);return false;" style="position:absolute;left:179px;top:54px;width:114px;height:24px;line-height:24px;z-index:4;" name="Editbox1" value="192.168.---.---." class="My_TX">
+            <input type="text" id="SHN" style="position:absolute;left:179px;top:137px;width:114px;height:23px;line-height:23px;z-index:5;" name="Editbox1" value="MyIOT" class="My_TX">
+            <input type="button" id="Button134" onclick="Update_Wifi(WFM);return false;" name="" value="Set" style="position:absolute;left:307px;top:14px;width:45px;height:25px;z-index:6;" class="My_BT"><script>               
+                function Update_Wifi(_ID)
+                {
+                  var command  =_ID.id +'='+_ID.value ;
+                  
+                  _Connection.send(command);
+               }
+               
+            </script>
+            <input type="button" id="Button3hsddf" onclick="Update_Wifi(SIP);return false;" name="" value="Set" style="position:absolute;left:306px;top:55px;width:45px;height:25px;z-index:7;" class="My_BT">
+            <input type="button" id="Button4dfgh" onclick="Update_Wifi(SHN);return false;" name="" value="Set" style="position:absolute;left:306px;top:137px;width:45px;height:25px;z-index:8;" class="My_BT">
+            <div id="wb_Textghn3" style="position:absolute;left:378px;top:20px;width:106px;height:19px;z-index:9;text-align:left;">
+               <span style="color:#000000;font-family:Tahoma;font-size:16px;">user</span>
+            </div>
+            <div id="wb_Texkkt4" style="position:absolute;left:382px;top:60px;width:102px;height:19px;z-index:10;text-align:left;">
+               <span style="color:#000000;font-family:Tahoma;font-size:16px;">pass</span>
+            </div>
+            <input type="text" id="_username" style="position:absolute;left:501px;top:15px;width:93px;height:21px;line-height:21px;z-index:11;" name="Editbox1" value="" class="My_TX">
+            <input type="password" id="_password" style="position:absolute;left:501px;top:56px;width:93px;height:21px;line-height:21px;z-index:12;" name="Editbox1" value="" class="My_TX">
+            <div id="wb_Text5aaa" style="position:absolute;left:376px;top:98px;width:125px;height:19px;z-index:13;text-align:left;">
+               <span style="color:#000000;font-family:Tahoma;font-size:16px;">level</span>
+            </div>
+            <select name="Combobox1" size="1" id="_userType" style="position:absolute;left:501px;top:96px;width:95px;height:25px;z-index:14;" class="My_TX">
+               <option selected="" value="Admin">Admin</option>
+               <option value="Limit">Limit</option>
+            </select>
+            <input type="button" id="Butcghton6" onclick="AddUser();return false;" name="" value="add useer" style="position:absolute;left:606px;top:56px;width:96px;height:25px;z-index:15;" class="My_BT">
+            <input type="button" id="Buh7" onclick="RemoveUser();return false;" name="" value="remove user" style="position:absolute;left:606px;top:96px;width:96px;height:25px;z-index:16;" class="My_BT">
+<!-- user list -->
+            <div id="userlist" style="position:absolute;left:704px;top:12px;width:178px;height:191px;z-index:17">
+            </div>
+            <input type="button" id="Button8" onclick="show_user_list();return false;" name="" value="users" style="position:absolute;left:606px;top:16px;width:96px;height:25px;z-index:18;" class="My_BT">
+            <input type="text" id="_ssid" style="position:absolute;left:179px;top:258px;width:114px;height:23px;line-height:23px;z-index:19;" name="Editbox1" value="" class="My_TX">
+            <div id="wb_Text7765" style="position:absolute;left:20px;top:257px;width:148px;height:19px;text-align:right;z-index:20;">
+               <span style="color:#000000;font-family:Tahoma;font-size:16px;">choose wifi</span>
+            </div>
+            <div id="wb_Textokhj8" style="position:absolute;left:20px;top:298px;width:148px;height:19px;text-align:right;z-index:21;">
+               <span style="color:#000000;font-family:Tahoma;font-size:16px;">pass</span>
+            </div>
+            <input type="text" id="_netpass" style="position:absolute;left:179px;top:298px;width:114px;height:23px;line-height:23px;z-index:22;" name="Editbox1" value="" class="My_TX">
+            <input type="button" id="Bugdfgtton9" onclick="SetNetwork();return false;" name="" value="Set" style="position:absolute;left:306px;top:258px;width:45px;height:25px;z-index:23;" class="My_BT">
+            <input type="button" id="Button10" onclick="ScanNetwork();return false;" name="" value="search net" style="position:absolute;left:597px;top:182px;width:95px;height:25px;z-index:24;" class="My_BT">
+<!-- network scan -->
+            <div id="netScanResult" style="position:absolute;left:377px;top:210px;width:315px;height:208px;z-index:25">
+            </div>
+            <div id="wb_Text9jhnbvc" style="position:absolute;left:327px;top:300px;width:39px;height:18px;z-index:26;text-align:left;">
+               <span style="color:#000000;font-family:Arial;font-size:16px;">Hide</span>
+            </div>
+            <input type="checkbox" id="_hidecheck" name="_hidecheck" value="on" style="position:absolute;left:307px;top:303px;z-index:27;" onchange="document.getElementById('_netpass').type = this.checked ? 'password' : 'text'">
+            <div id="wb_Tezzxt10" style="position:absolute;left:30px;top:175px;width:138px;height:19px;text-align:right;z-index:28;">
+               <span style="color:#000000;font-family:Tahoma;font-size:16px;">set wifi name </span>
+            </div>
+            <div id="wb_Text11" style="position:absolute;left:30px;top:216px;width:138px;height:19px;text-align:right;z-index:29;">
+               <span style="color:#000000;font-family:Tahoma;font-size:16px;">set wifi pass</span>
+            </div>
+            <input type="button" id="Button11hdf" onclick="Update_Wifi(APN);return false;" name="" value="Set" style="position:absolute;left:306px;top:178px;width:45px;height:25px;z-index:30;" class="My_BT">
+            <input type="text" id="APN" style="position:absolute;left:179px;top:178px;width:114px;height:20px;line-height:20px;z-index:31;" name="Editbox1" value="My Network" class="My_TX">
+            <input type="text" id="APP" style="position:absolute;left:179px;top:216px;width:114px;height:23px;line-height:23px;z-index:32;" name="Editbox1" value="****" class="My_TX">
+            <input type="button" id="Bufdtton12" onclick="Update_Wifi(APP);return false;" name="" value="Set" style="position:absolute;left:306px;top:219px;width:45px;height:25px;z-index:33;" class="My_BT">
+            <input type="text" id="STI" onchange="CheckIP(this);return false;" style="position:absolute;left:180px;top:96px;width:114px;height:23px;line-height:23px;z-index:34;" name="Editbox1" value="192.168.---.---." class="My_TX">
+            <input type="button" id="Bstatic" onclick="Update_Wifi(STI);return false;" name="" value="Set" style="position:absolute;left:307px;top:96px;width:45px;height:25px;z-index:35;" class="My_BT">
+            <input type="checkbox" id="staticCheck" name="_hidecheck" value="on" style="position:absolute;left:10px;top:98px;z-index:36;" onchange="enable_static_IP(this.checked);return false;">
+            <script>               
+               function enable_static_IP(checked)
+               {
+               	if(checked) command  = "ESI="+"1";
+               	else        command  = "ESI="+"0";
+               
+               	_Connection.send(command);
+               }
+               
+            </script>
+            <input type="button" id="RESTART" onclick="RestartHTML();return false;" name="" value="Restart" style="position:absolute;left:491px;top:182px;width:95px;height:25px;z-index:37;" class="My_BT"><script>               
+                function Restart()
+               { 
+                  var command  = "RRE"; 
+                  _Connection.send(command);
+               }
+               
+            </script>
+            <input type="button" id="savesetting" onclick=" save_setting();return false;" name="" value="save setting" style="position:absolute;left:378px;top:182px;width:95px;height:25px;z-index:38;" class="My_BT"><script>               
+                function save_setting()
+               { 
+                  var command  = "SVE"; 
+                  _Connection.send(command);
+               }
+               
+            </script>
+            <div id="wb_Text8" style="position:absolute;left:366px;top:143px;width:118px;height:19px;text-align:right;z-index:39;">
+               <span style="color:#000000;font-family:Tahoma;font-size:16px;">status</span>
+            </div>
+            <select name="Combobox1" size="1" id="NMODE" onchange="set_net_mode();return false;" style="position:absolute;left:501px;top:144px;width:95px;height:25px;z-index:40;" class="My_TX">
+               <option selected="" value="S">Indep.</option>
+               <option value="M">management</option>
+            </select>
+            <div id="wb_Text1" style="position:absolute;left:46px;top:96px;width:122px;height:21px;text-align:right;z-index:41;">
+               <span style="color:#000000;font-family:Tahoma;font-size:16px;">Static IP</span><span style="color:#000000;font-family:Arial;font-size:8px;"><br></span>
+            </div>
+  
+         </div></div>
+<!-- _about -->
+      <div id="Ht_about" style="position:absolute;left:98px;top:189px;width:68px;height:57px;z-index:18">
+         <div id="_about" class="my_tab" style="position:absolute;display:none">
+  
+   
+  
+         </div></div>
+      <div id="wb_Tfgkext2" style="position:absolute;left:367px;top:1047px;width:87px;height:16px;z-index:19;text-align:left;">
+         <span style="color:#000000;font-family:Arial;font-size:13px;">.</span>
+      </div>
+   </div>
+   <div id="top_layer" style="position:fixed;text-align:center;left:0;top:0;right:0;height:132px;z-index:20;">
+      <div id="top_layer_Container" style="width:800px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+         <div id="layer_log" style="position:absolute;text-align:left;left:506px;top:7px;width:135px;height:119px;z-index:6;left:115%;transform:translate(-115%, 0);">
+            <div id="MyFlag" style="position:absolute;left:10px;top:55px;width:71px;height:54px;z-index:0">
+               <canvas id="flag"></canvas></div>
+            <input type="button" id="_link" onclick="ini_ws();return false;" name="" value="" style="position:absolute;left:93px;top:51px;width:26px;height:26px;z-index:1;">
+            <div id="wb_Tex6yt5t3" style="position:absolute;left:81px;top:16px;width:38px;height:16px;z-index:2;text-align:left;">
+               <span style="color:#000000;font-family:Arial;font-size:13px;"><strong><a href="/exit">Exit</a></strong></span></div>
+         </div>
+         <div id="Layer1" style="position:absolute;text-align:left;left:78px;top:2px;width:424px;height:127px;z-index:7;left:32%;transform:translate(-32%, 0);">
+            <input type="text" id="current_data" style="position:absolute;left:86px;top:56px;width:240px;height:27px;line-height:27px;z-index:3;" name="Editbox1" value="---" readonly="">
+            <div id="wb_Text1vy50" style="position:absolute;left:75px;top:5px;width:279px;height:41px;text-align:center;z-index:4;">
+              <span style="color:#FFD700;font-family:Arial;font-size:20px;"><strong><br>Smart CNC Portal</strong></span></div>
+            <div id="wb_CssMenu4" style="position:absolute;left:6px;top:88px;width:418px;height:30px;z-index:5;">
+               <ul>
+                  <li class="firstmain"><a href="javascript:show_tab('_status');" target="_self" title="HOME">Home</a>
+                  </li>
+                  <li><a href="javascript:show_tab('_wifi');" target="_self" title="Network Setting">Network</a>
+                  </li>
+                  <li><a href="javascript:show_tab('_setting');" target="_self" title="CNC Setting"> CNC</a>
+                  </li>
+                  <li><a href="javascript:show_tab('_about');" target="_self" title="Advance Setting">Advance</a>
+                  </li>
+               </ul>
+               <br>
+            </div>
+         </div>
+          
+      </div>
+   </div>
+</body>
+</html>
